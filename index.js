@@ -3,7 +3,14 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 
 // TODO: Create an array of questions for user input
-const questions = [];
+const questions = [
+    {
+        type: "input",
+        message: "What is your GitHub user name?",
+        name: "userName",
+        default: "ncastaldi"
+    }
+];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) { }
@@ -13,9 +20,7 @@ function init() {
     // const welcomeMsg = `Professional README Generator | Created By Nathan Castaldi ©2021`;
     console.log(`Professional README Generator | Created By Nathan Castaldi ©2021`);
 
-    // Create welcome text explaining how to use the app
-
-    // Ask Questions
+    inquirer.prompt(questions);
 
     // Output to file
     //writeToFile(x,y)
