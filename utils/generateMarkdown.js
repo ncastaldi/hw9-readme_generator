@@ -70,7 +70,7 @@ For more information, please refer to <http://unlicense.org/>`;
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   // Deconstruct answer object  
-  const { userName, repoName, projectTitle, projectDescription, installNotes, contribNotes, licenseSelection, specialFeatures } = data;
+  const { userName, userEmail, repoName, projectTitle, projectDescription, installNotes, contribNotes, licenseSelection, specialFeatures } = data;
 
   // Generate License Badge Link
   const licenseBadge = renderLicenseBadge(licenseSelection);
@@ -105,7 +105,10 @@ ${licenseText}
 ${data.specialFeatures}
 
 ##Questions
-If you have any questions about this app, please reach out to me on [GitHub](http://github.com/${data.userName})
+If you have any questions about this app, email me or visit me on GitHub.
+
+[Email](mailto://${data.userEmail})
+[GitHub](http://github.com/${data.userName})
 `;
 }
 

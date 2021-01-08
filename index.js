@@ -13,6 +13,12 @@ const questions = [
     },
     {
         type: "input",
+        message: "Enter your email address:",
+        name: "userEmail",
+        default: "nathan@castaldi.dev",
+    },
+    {
+        type: "input",
         message: "Enter the name of the GitHub repo:",
         name: "repoName",
         default: "readme_generator",
