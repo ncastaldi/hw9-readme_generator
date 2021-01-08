@@ -36,6 +36,12 @@ const questions = [
         default: "Optional",
     },
     {
+        type: "input",
+        message: "Enter information about any contributors to this project:",
+        name: "contribNotes",
+        default: "Optional",
+    },
+    {
         type: "list",
         message: "Choose license:",
         choices: ["MIT", "No License"],
