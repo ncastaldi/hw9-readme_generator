@@ -1,3 +1,5 @@
+const date = require("date-and-time");
+
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
@@ -24,8 +26,10 @@ function renderLicenseLink(license) { }
 function renderLicenseSection(license, user) {
   switch (license) {
     case "MIT":
+      const now = new Date();
+      currentYear = date.format(now, "YYYY");
       licenseText = `
-Copyright <YEAR> ${user}
+Copyright ${currentYear} ${user}
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
