@@ -30,6 +30,12 @@ const questions = [
         default: "Project1",
     },
     {
+        type: "input",
+        message: "Enter installation instructions:",
+        name: "installNotes",
+        default: "Optional",
+    },
+    {
         type: "list",
         message: "Choose license:",
         choices: ["MIT", "No License"],

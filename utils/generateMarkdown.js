@@ -23,7 +23,7 @@ function renderLicenseSection(license) { }
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   // Deconstruct answer object  
-  const { userName, repoName, projectTitle, projectDescription, licenseSelection } = data;
+  const { userName, repoName, projectTitle, projectDescription, installNotes, licenseSelection } = data;
 
   // Generate License Badge Link
   const licenseBadge = renderLicenseBadge(licenseSelection);
@@ -45,6 +45,7 @@ function generateMarkdown(data) {
 * [Features](#features)
 
 ## Installation
+${data.installNotes}
 
 ## Usage 
 
