@@ -74,7 +74,7 @@ For more information, please refer to <http://unlicense.org/>`;
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   // Deconstruct answer object  
-  const { userName, userEmail, repoName, projectTitle, projectDescription, installNotes, contribNotes, licenseSelection, specialFeatures } = data;
+  const { userName, userEmail, repoName, projectTitle, projectDescription, installNotes, usageNotes, contribNotes, licenseSelection, testing } = data;
 
   // Generate License Badge Link
   const licenseBadge = renderLicenseBadge(licenseSelection);
@@ -100,13 +100,16 @@ function generateMarkdown(data) {
 ${data.installNotes}
 
 ## Usage
-${data.contribNotes}
+${data.usageNotes}
 
 ## License
 ${licenseText}
 
-## Features
-${data.specialFeatures}
+## Contribution Guidelines
+${data.contribNotes}
+
+## Tests
+${data.testing}
 
 ## Questions
 If you have any questions about this app, email me or visit me on GitHub.

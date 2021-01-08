@@ -42,13 +42,18 @@ const questions = [
     },
     {
         type: "input",
-        message: "Enter information about any contributors to this project:",
+        message: "Enter usage instructions:",
+        name: "usageNotes",
+    },
+    {
+        type: "input",
+        message: "Enter information for contributors:",
         name: "contribNotes",
     },
     {
         type: "input",
-        message: "Enter information about special features:",
-        name: "specialFeatures",
+        message: "Enter information about testing:",
+        name: "testing",
     },
     {
         type: "list",
