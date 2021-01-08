@@ -53,11 +53,14 @@ function init() {
     inquirer
         .prompt(questions)
         .then(answers => {
+            // Send answers through formatting function
             const mdData = generateMarkdown(answers);
-            console.log(mdData);
 
+            // Adapt filename for unquie output
             outputFileName = answers.projectTitle + ".md";
-            writeToFile(outputFileName, JSON.stringify(mdData));
+
+            // Send filename and data to be written
+            writeToFile(outputFileName, mdData);
         });
 }
 
