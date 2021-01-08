@@ -5,6 +5,9 @@ function renderLicenseBadge(license) {
     case "MIT":
       licenseBadge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
       break;
+    case "No License":
+      licenseBadge = "";
+      break;
   }
   return licenseBadge;
 }
