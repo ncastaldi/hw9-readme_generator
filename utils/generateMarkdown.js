@@ -18,6 +18,24 @@ function generateMarkdown(data) {
 
   ## Description
   ${data.projectDescription}
+
+  ## Table of Contents
+
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
+* [Badges](#badges)
+* [Features](#features)
+
+## Installation
+
+## Usage 
+
+## License
+
+## Features
+
 `;
 }
 
