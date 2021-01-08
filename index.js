@@ -32,8 +32,6 @@ const questions = [
 
 // Function to write README file
 function writeToFile(fileName, data) {
-    console.log(fileName);
-    console.log(data);
     fs.writeFile(fileName, data, (err) => {
         if (err) throw err;
         console.log('The file has been saved!');
@@ -48,7 +46,8 @@ function init() {
     inquirer
         .prompt(questions)
         .then(answers => {
-            writeToFile("README.md", JSON.stringify(answers));
+            outputFileName = answers.projectTitle + ".md";
+            writeToFile(outputFileName, JSON.stringify(answers));
         });
 }
 
