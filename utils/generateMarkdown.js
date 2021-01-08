@@ -91,24 +91,24 @@ function generateMarkdown(data) {
 
 * [Installation](#installation)
 * [Usage](#usage)
-* [Credits](#credits)
 * [License](#license)
-* [Features](#features)
+* [Contributions](#contributions)
+* [Tests](#tests)
 * [Questions](#questions)
 
-## Installation Guide
+## Installation
 ${data.installNotes}
 
-## Usage Notes
+## Usage
 ${data.usageNotes}
 
 ## License
 ${licenseText}
 
-## Contribution Guidelines
+## Contributions
 ${data.contribNotes}
 
-## Test Instructions
+## Tests
 ${data.testing}
 
 ## Questions
