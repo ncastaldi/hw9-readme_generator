@@ -25,9 +25,10 @@ function generateMarkdown(data) {
   // Deconstruct answer object  
   const { userName, repoName, projectTitle, projectDescription, licenseSelection } = data;
 
+  // Generate License Badge Link
   const licenseBadge = renderLicenseBadge(licenseSelection);
-  console.log(licenseBadge);
 
+  // Write captured input to file
   return `${licenseBadge}
   # ${data.projectTitle}
 
