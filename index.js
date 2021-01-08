@@ -1,6 +1,7 @@
 // Packages needed for this application
 const fs = require("fs");
 const inquirer = require("inquirer");
+const generateMarkdown = require("./utils/generateMarkdown")
 
 // An array of questions for user input
 const questions = [
@@ -31,7 +32,7 @@ const questions = [
     {
         type: "list",
         message: "Choose license:",
-        choices: ["MIT", "Something Else"],
+        choices: ["MIT", "No License"],
         name: "licenseSelection",
     }
 ];
@@ -52,8 +53,11 @@ function init() {
     inquirer
         .prompt(questions)
         .then(answers => {
+            const mdData = generateMarkdown(answers);
+            console.log(mdData);
+
             outputFileName = answers.projectTitle + ".md";
-            writeToFile(outputFileName, JSON.stringify(answers));
+            writeToFile(outputFileName, JSON.stringify(mdData));
         });
 }
 
