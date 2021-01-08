@@ -1,2 +1,1 @@
-# hw9-readme_generator
-Assignment: Professional ReadMe Generator
+{"userName":"ncastaldi","repoName":"readme_generator","projectTitle":"Project1","projectDescription":"Project1"}

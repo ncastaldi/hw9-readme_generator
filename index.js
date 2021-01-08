@@ -34,6 +34,10 @@ const questions = [
 function writeToFile(fileName, data) {
     console.log(fileName);
     console.log(data);
+    fs.writeFile(fileName, data, (err) => {
+        if (err) throw err;
+        console.log('The file has been saved!');
+    });
 }
 
 // Function to initialize app
@@ -44,7 +48,7 @@ function init() {
     inquirer
         .prompt(questions)
         .then(answers => {
-            writeToFile("README.md", answers);
+            writeToFile("README.md", JSON.stringify(answers));
         });
 }
 
