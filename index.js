@@ -27,6 +27,12 @@ const questions = [
         message: "Enter a description of your project:",
         name: "projectDescription",
         default: "Project1",
+    },
+    {
+        type: "list",
+        message: "Choose license:",
+        choices: ["MIT", "Something Else"],
+        name: "licenseSelection",
     }
 ];
 
