@@ -105,7 +105,7 @@ ${licenseText}
 ${data.specialFeatures}
 
 ##Questions
-If you have any questions about this app, please reach out to me here on [GitHub](http://github.com/${data.userName})
+If you have any questions about this app, please reach out to me on [GitHub](http://github.com/${data.userName})
 `;
 }
 
