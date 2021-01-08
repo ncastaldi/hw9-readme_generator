@@ -1,7 +1,6 @@
 const date = require("date-and-time");
 
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// Function returning link to correct badge
 function renderLicenseBadge(license) {
   switch (license) {
     case "MIT":
@@ -17,12 +16,7 @@ function renderLicenseBadge(license) {
   return licenseBadge;
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) { }
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// Function returning license text
 function renderLicenseSection(license, user) {
   switch (license) {
     case "MIT":
@@ -71,7 +65,7 @@ For more information, please refer to <http://unlicense.org/>`;
   return licenseText;
 }
 
-// TODO: Create a function to generate markdown for README
+// Function returning generated markdown for README
 function generateMarkdown(data) {
   // Deconstruct answer object  
   const { userName, userEmail, repoName, projectTitle, projectDescription, installNotes, usageNotes, contribNotes, licenseSelection, testing } = data;
