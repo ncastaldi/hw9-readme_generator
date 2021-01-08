@@ -90,6 +90,7 @@ function generateMarkdown(data) {
 * [Credits](#credits)
 * [License](#license)
 * [Features](#features)
+* [Questions](#questions)
 
 ## Installation
 ${data.installNotes}
@@ -102,6 +103,9 @@ ${licenseText}
 
 ## Features
 ${data.specialFeatures}
+
+##Questions
+If you have any questions about this app, please reach out to me here on [GitHub](http://github.com/${data.userName})
 `;
 }
 
