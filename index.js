@@ -1,6 +1,7 @@
 // Packages needed for this application
 const fs = require("fs");
 const inquirer = require("inquirer");
+const date = require("date-and-time");
 const generateMarkdown = require("./utils/generateMarkdown")
 
 // An array of questions for user input
