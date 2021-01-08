@@ -108,7 +108,7 @@ ${licenseText}
 ## Features
 ${data.specialFeatures}
 
-##Questions
+## Questions
 If you have any questions about this app, email me or visit me on GitHub.
 
 [Email](mailto://${data.userEmail})
