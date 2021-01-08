@@ -21,11 +21,11 @@ Download the following files to a local folder:
 - package.json
 - util/generateMarkdown.js
 
-Run `npm install` from a Bash command line to install dependencies.
+Run `npm install` command from a Bash command line to install dependencies.
 
 ## Usage
 
-Enter `node index.js` at Bash command line to start app.
+Run `node index.js` command from a Bash command line to start app.
 
 Video of App: ![App Walkthrough GIF](./assets/recordingOfApp.gif)
 
