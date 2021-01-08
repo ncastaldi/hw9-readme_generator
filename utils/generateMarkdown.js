@@ -11,7 +11,7 @@ function renderLicenseBadge(license) {
       licenseBadge = `[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)`;
       break;
     case "No License":
-      licenseBadge = "No license included with this project.";
+      licenseBadge = ``;
       break;
   }
   return licenseBadge;
@@ -65,7 +65,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 For more information, please refer to <http://unlicense.org/>`;
       break;
     case "No License":
-      licenseText = "";
+      licenseText = `No license included with this project.`;
       break;
   }
   return licenseText;
