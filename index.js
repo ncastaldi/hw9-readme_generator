@@ -33,19 +33,22 @@ const questions = [
         type: "input",
         message: "Enter installation instructions:",
         name: "installNotes",
-        default: "Optional",
     },
     {
         type: "input",
         message: "Enter information about any contributors to this project:",
         name: "contribNotes",
-        default: "Optional",
     },
     {
         type: "list",
         message: "Choose license:",
-        choices: ["MIT", "No License"],
+        choices: ["MIT", "The Unlicense", "No License"],
         name: "licenseSelection",
+    },
+    {
+        type: "input",
+        message: "Enter information about special features:",
+        name: "specialFeatures",
     }
 ];
 
