@@ -40,15 +40,15 @@ const questions = [
         name: "contribNotes",
     },
     {
+        type: "input",
+        message: "Enter information about special features:",
+        name: "specialFeatures",
+    },
+    {
         type: "list",
         message: "Choose license:",
         choices: ["MIT", "The Unlicense", "No License"],
         name: "licenseSelection",
-    },
-    {
-        type: "input",
-        message: "Enter information about special features:",
-        name: "specialFeatures",
     }
 ];
 
@@ -63,7 +63,7 @@ function writeToFile(fileName, data) {
 // Function to initialize app
 function init() {
     console.log(`Professional README Generator | Created By Nathan Castaldi ©2021
-    Follow the prompts to create your readme.md file...`);
+Follow the prompts to create your readme.md file`);
 
     inquirer
         .prompt(questions)
