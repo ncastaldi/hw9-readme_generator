@@ -2,6 +2,10 @@
 
 ## Description
 
+For this assignment, we were tasked with creating a command-line application that dynamically generates a professional README.md file from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer).
+
+This app
+
 ## Table of Contents
 
 - [Installation](#installation)
@@ -15,7 +19,7 @@
 
 ## Usage
 
-GitHub Repository: [https://github.com/ncastaldi/hw4-code_quiz](https://github.com/ncastaldi/hw4-code_quiz)
+GitHub Repository: [https://github.com/ncastaldi/hw9-readme_generator](https://github.com/ncastaldi/hw9-readme_generator)
 
 Video of App: ![App Walkthrough GIF](./assets/recordingOfApp.gif)
 
