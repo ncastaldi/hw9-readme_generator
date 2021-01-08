@@ -96,10 +96,10 @@ function generateMarkdown(data) {
 * [Features](#features)
 * [Questions](#questions)
 
-## Installation
+## Installation Guide
 ${data.installNotes}
 
-## Usage
+## Usage Notes
 ${data.usageNotes}
 
 ## License
@@ -108,7 +108,7 @@ ${licenseText}
 ## Contribution Guidelines
 ${data.contribNotes}
 
-## Tests
+## Test Instructions
 ${data.testing}
 
 ## Questions
