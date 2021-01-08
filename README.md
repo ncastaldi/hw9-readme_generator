@@ -10,18 +10,26 @@ This app
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
 - [License](#license)
 - [Badges](#badges)
-- [Features](#features)
 
 ## Installation
 
+Download the following files to a local folder:
+
+- index.js
+- package.json
+- util/generateMarkdown.js
+
+Run `npm install` from a Bash command line to install dependencies.
+
 ## Usage
 
-GitHub Repository: [https://github.com/ncastaldi/hw9-readme_generator](https://github.com/ncastaldi/hw9-readme_generator)
+Enter `node index.js` at Bash command line to start app.
 
 Video of App: ![App Walkthrough GIF](./assets/recordingOfApp.gif)
+
+GitHub Repository: [https://github.com/ncastaldi/hw9-readme_generator](https://github.com/ncastaldi/hw9-readme_generator)
 
 ## License
 
