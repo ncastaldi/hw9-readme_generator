@@ -71,7 +71,7 @@ function init() {
             // Send answers through formatting function
             const formattedData = generateMarkdown(answers);
 
-            // Adapt filename for unquie output
+            // Adapt filename for unique output
             outputFileName = answers.projectTitle + ".md";
 
             // Send filename and data to be written
